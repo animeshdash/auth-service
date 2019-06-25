@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def me
+  def myself
     render json: UserSerializer.new(current_user)
   end
 
